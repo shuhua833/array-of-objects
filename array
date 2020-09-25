@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class test{
+	float a;
+	public:
+		void setdata(float no)
+		{
+			a=no;
+		}
+		void input_data()
+		{
+			cout<<"enter value of a"<<endl;
+			cin>>a;
+		}
+		void display()
+		{
+			cout<<"value of a is "<<a<<endl;
+		}
+};
+int main()
+{
+	int i;
+	test t[4];
+	t[0].setdata(10);
+	t[1].input_data();
+	t[2].input_data();
+	t[3].setdata(11);
+	for(i=0;i<4;i++)
+	{
+		t[i].display();
+	}
+	return 0;
+}
